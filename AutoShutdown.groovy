@@ -30,7 +30,7 @@ def toMBps = { nowBytes, nowNano, preBytes, preNano ->
 }
 
 def shutDown = { t ->
-    println "will shutdown in second $t"
+    println "will shutdown in seconds $t"
     println "cmd /c shutdown -s -t $t".execute().text
 }
 
@@ -49,8 +49,9 @@ while (lowTimes < config.lowTimesThreshold) {
 }
 shutDown config.shutdownHolder
 
-sleep TimeUnit.SECONDS.toMillis(config.shutdownHolder) 
+sleep TimeUnit.SECONDS.toMillis(config.shutdownHolder + 5) 
 
+println 'down!'
 
 
 
