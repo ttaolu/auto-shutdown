@@ -10,7 +10,7 @@
 
 #### 依赖
 - [jre 8+](https://www.oracle.com/java/technologies/downloads/)
-- [groovy 3.0+](https://groovy.apache.org/download.html)
+- [groovy 3.0+](https://groovy.apache.org/download.html) 安装引导 [groovy-install](https://groovy-lang.org/install.html)
 
 
 #### 操作步骤
